@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Technology Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+       <nav>
+    <h1>Innovate. Create. Deliver.</h1>
+</nav>
+<h2>Web Development Group Project</h2>
+        
+        <div class="project-selection">
+            <a href="number1/question1.html" class="project-btn">Question 1</a>
+            <a href="number2/num2.html" class="project-btn">Question 2</a>
+            <a href="number3/question3.html" class="project-btn">Question 3</a>
+            <a href="number4/num4.html" class="project-btn">Question 4</a>
+            <a href="number5/Carsale.html" class="project-btn">Question 5</a>
+        </div>
+        <div class="group-button-container">
+            <button class="group-btn" id="showMembersBtn">Meet Our Team</button>
+        </div>
+    </div>
+
+    <!-- Hidden Group Members Section -->
+    <section class="group-section hidden" id="groupSection">
+        <h2>Meet the Team</h2>
+        <ul class="group-members">
+            <li>REVALDO SITHOLE N0231987R</li>
+            <li>GENIUS CHAKANYA  N0234583W</li>
+            <li>MUCHENGETI MURONZA   N0237889K</li>
+            <li>PILANI MKWANANZI  N0232295S</li>
+            <li>TANAKA MABHACHI   N0238585G</li>
+            <li>DYLAN ZUZE    N0232487P</li>
+            <li>TARIRO MAZURA   N0231753C</li>
+            <li>BELIEVE MUBAIWA   N0238068Y</li>
+            <li>RUVARASHE MUVENGERANWA  N0230425P</li>
+            <li>TANAKA KATSUKUNYA  N0238201B</li>
+            <li>TANAKA NDINDE  N0234653K</li>
+            <li>DOROTHY MATEMBUDZE   N0235535M</li>
+            <li>CLAYTON MUSWERE   N0233570J</li>
+            
+        </ul>
+    </section>
+
+    <script>
+        // JavaScript to handle the button click
+        const showMembersBtn = document.getElementById('showMembersBtn');
+        const groupSection = document.getElementById('groupSection');
+
+        showMembersBtn.addEventListener('click', () => {
+            groupSection.classList.toggle('hidden');
+            if (!groupSection.classList.contains('hidden')) {
+                showMembersBtn.textContent = 'Hide Team';
+            } else {
+                showMembersBtn.textContent = 'Meet Our Team';
+            }
+        });
+    </script>
+
+</body>
+</html>

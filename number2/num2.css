@@ -1,0 +1,117 @@
+/* General Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif; /* Using a modern sans-serif font */
+    background-color: #e8f1f2; /* Light background color */
+    color: #333; /* Dark text color for good contrast */
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #34495e; /* Darker header background */
+    color: #ecf0f1; /* Light text */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif; /* Stylish font for the header */
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Layout for the Main Content Section */
+#content {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three-column layout for larger screens */
+    gap: 20px;
+}
+
+/* Individual Component Styling */
+.component {
+    background-color: #fff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Components */
+.component:hover {
+    transform: translateY(-10px); /* Lifting effect on hover */
+}
+
+h2 {
+    color: #27ae60; /* Green color for headings */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #27ae60; /* Adding a bottom border to the heading */
+    padding-bottom: 5px;
+}
+
+p, ul {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    #content {
+        grid-template-columns: 1fr 1fr; /* Two-column layout on medium screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smaller font size for header on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        grid-template-columns: 1fr; /* Single-column layout on small screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Further reduction in font size */
+    }
+}

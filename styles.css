@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f4f7;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+}
+
+/* Project Button Styles */
+.project-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-btn:hover {
+    background-color: #1f6396;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Group Button */
+.group-button-container {
+    margin-top: 30px;
+}
+
+.group-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.group-btn:hover {
+    background-color: #219150;
+    transform: translateY(-5px);
+}
+
+/* Group Members Section */
+.group-section {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    margin-top: -20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.group-section h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.group-members {
+    list-style-type: none;
+    padding: 0;
+}
+
+.group-members li {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .project-btn, .group-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    
+    .group-section h2 {
+        font-size: 2em;
+    }
+    
+    .group-section li {
+        font-size: 1em;
+    }
+}
